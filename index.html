@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تمرین Form و DOM</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <h2>فرم نمونه</h2>
+
+  <form id="myForm">
+    <label for="username">نام کاربری:</label>
+    <input type="text" id="username" required>
+    <button type="submit">ارسال</button>
+    <div class="count-message"></div>
+    <div class="message"></div>
+  </form>
+
+  <hr><br>
+
+  <form id="form">
+    <label> نام کاربری:
+      <input type="text" id="username1" required minlength="5">
+    </label>
+    <button type="submit">ارسال</button>
+  </form>
+
+  <button id="forceSubmit">ارسال با submit()</button>
+  <button id="requestSubmit">ارسال با requestSubmit()</button>
+
+  <br><hr><br>
+
+  <form id="form1">
+    <label >Age:</label>
+    <input type="number" id="age" min="0" max="120" step="1">
+    <button type="submit">ثبت</button>
+  </form>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <form id="myForm">
+  <label>سن:  </label>
+    <input type="number" id="age" min="0" max="120" step="1">
+  <button type="submit">ثبت</button>
+</form> -->

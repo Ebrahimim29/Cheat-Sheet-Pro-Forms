@@ -1,0 +1,66 @@
+@font-face {
+  font-family: yekan;
+  src: url("/assets/font/persianFont/yekan-font/yekan-regular.woff");
+  src: url("/assets/font/persianFont/yekan-font/yekan-regular.ttf");
+}
+
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #e3f2fd;
+  --text-color: #333;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: yekan;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 12px;
+}
+
+button {
+  margin: 4px;
+  padding-inline: 10px;
+}
+
+select{
+  width: 30%;
+}
+
+pre {
+  background: #111;
+  color: #bfb;
+  padding: 10px;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow: auto;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.message {
+  color: red;       /* رنگ متن */
+  background: #ffe6e6; /* رنگ پس‌زمینه */
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  transition: all 500ms;
+  opacity: 0;
+}
+.message.show {
+  opacity: 1;
+  display: block;
+}
