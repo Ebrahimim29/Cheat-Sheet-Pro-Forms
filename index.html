@@ -64,6 +64,13 @@
     
   <h3>Serialize Data : تبدیل داده های فرم یا آبجکت ها به یک قالب استاندارد متنی که بشه اون رو به سرور فرستاد</h3> <br><br>
 
+  <h5>متدهای مربوط به FormData:</h5><br>
+  <pre>append(key,value): اضافه کردن فیلد- get(key): گرفتن اولین مقدار -getAll(key): گرفتن همه مقادیر
+    set(key,value): جایگزینی مقدار - delete(key): حذف مقدار - has(key): بررسی وجود
+    entries(): کارش اینه که تمام فیلدهای فرم را به صورت یک iterable از جفتهای [key,value] بر میگرداند.
+  </pre><br>
+  
+
   <form id="form2">
     <input name="username2" value="Mohammad">
     <input name="age" value="41">
@@ -72,6 +79,7 @@
       <option value="Isfahan">Isfahan</option>
       <option value="Tabriz">Tabriz</option>
     </select>
+    <button type="submit">ارسال</button>
   </form>
 
 
