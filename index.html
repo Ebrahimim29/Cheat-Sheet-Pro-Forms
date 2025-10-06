@@ -40,6 +40,41 @@
     <button type="submit">ثبت</button>
   </form>
 
+  <hr><br>
+
+  <h2>238-معرفی فرمتهای مختلف جهت سریالازکردن دیتاهای فرم و معرفی آبجکت FormData:</h2><br>
+  <h4>روشهای ارسال اطلاعات به برنامه نویس بک اند (فرمتهای استاندارد ارسال اطلاعات به سمت سرور):
+  </h4>
+  <br>
+    <p>
+      1-JSON: خوانا،ساختارمند و برای API های مدرن انتخاب اول محسوب میشه
+      application/json => {"username":"abbas" , "password":"1234"}
+      <br>
+      2-UrlEncoded:ساده و سبک هست، برای فرمهای معمولی خیلی استفاده میشه
+      application/x-www-form-urlencoded => username=abbas&password=1234
+      <br>
+      3-form-data: مناسب برای ارسال فایلها و داده های متنی با هم
+      .multipart/form-data
+      <br>
+      4-text/plain: مناسب برای ارسال فایلها و داده های متنی با هم
+      name=abbass <br>
+      email=abbas@gmail.count-message
+    </p>
+
+    
+  <h3>Serialize Data : تبدیل داده های فرم یا آبجکت ها به یک قالب استاندارد متنی که بشه اون رو به سرور فرستاد</h3> <br><br>
+
+  <form id="form2">
+    <input name="username2" value="Mohammad">
+    <input name="age" value="41">
+    <select name="city" multiple>
+      <option value="Tehran" selected>Tehran</option>
+      <option value="Isfahan">Isfahan</option>
+      <option value="Tabriz">Tabriz</option>
+    </select>
+  </form>
+
+
   <script src="/assets/js/script.js"></script>
 </body>
 
